@@ -40,6 +40,11 @@ ul,
 ol {
   list-style: none;
 }
+/*end of css reset*/
+
+:root {
+  --sidebar-font-size: 1rem;
+}
 
 body {
   font-family: "Geomini", sans-serif;
@@ -52,6 +57,39 @@ body {
   background-color: lightblue;
   display: grid;
   grid-template: 200px 1fr / 250px 1fr;
+}
+
+.sidebar {
+  grid-row: 1/ 3;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 65px;
+  background-color: white;
+  padding: 15px;
+}
+
+.sidebar-dashboard-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 15px;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--sidebar-font-size);
+  gap: 25px;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
 }
 
 .sidebar-icon {
