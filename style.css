@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  height: 100%;
+  min-height: 100vh;
   width: 100dvw;
   background-color: lightblue;
   display: grid;
@@ -67,6 +67,9 @@ body {
   gap: 65px;
   background-color: white;
   padding: 15px;
+  box-shadow:
+    3px 6px 6px rgba(0, 0, 0, 0.05),
+    3px 5px 3px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-dashboard-name {
@@ -105,6 +108,9 @@ body {
   align-items: center;
   padding: 15px;
   background-color: tan;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 7px 3px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar {
@@ -167,7 +173,7 @@ body {
 
 .main-content {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1.2fr;
   gap: 20px;
 }
 .projects-section {
@@ -190,26 +196,22 @@ body {
 }
 
 .project-card {
-  padding: 15px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 0.8rem;
-  background-color: grey;
+  background-color: white;
+  box-shadow:
+    0 6px 6px rgba(0, 0, 0, 0.05),
+    0 5px 3px rgba(0, 0, 0, 0.1);
+
+  border-left: 6px solid tan;
 }
 .project-card-words {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-}
-.project-card-words > p {
-  font-weight: 400;
-  font-size: 0.6rem;
-}
-
-.announcements-card > p {
-  font-weight: 400;
-  font-size: 0.6rem;
 }
 
 .profile-picture-top {
@@ -219,6 +221,79 @@ body {
   display: block;
 }
 
+.right-sidebar {
+  display: grid;
+  grid-template: 20px 1fr 1fr / 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-shadow:
+    -2px 4px 6px rgba(0, 0, 0, 0.05),
+    -3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-posts {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1.5rem;
+}
+
+.announcements-card {
+  box-shadow:
+    0 6px 6px rgba(0, 0, 0, 0.05),
+    0 5px 3px rgba(0, 0, 0, 0.1);
+
+  padding: 15px;
+}
+
+.trending-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.1rem;
+}
+
+.trending-posts {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  gap: 10px;
+}
+
+.trending-card {
+  display: flex;
+  box-shadow:
+    0 3px 3px rgba(0, 0, 0, 0.05),
+    0 3px 3px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  gap: 15px;
+}
+
+.trending-card-words {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.trending-card > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  display: block;
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+.sidebar-dashboard-name > .sidebar-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
 .profile-picture-main {
   width: 4rem;
   height: 4rem;
