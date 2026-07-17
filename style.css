@@ -165,6 +165,53 @@ body {
   border-radius: 1.5rem;
 }
 
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.projects-section {
+  grid-column: 1/2;
+  display: grid;
+  grid-template: 20px repeat(3, 1fr) / 1fr 1fr;
+  gap: 35px;
+  padding: 1.5rem;
+}
+
+.projects-section > span {
+  grid-column: span 2;
+}
+
+.symbols {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.project-card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  background-color: grey;
+}
+.project-card-words {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.project-card-words > p {
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+
+.announcements-card > p {
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+
 .profile-picture-top {
   width: 3rem;
   height: 3rem;
